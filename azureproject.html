@@ -145,6 +145,70 @@
                   <a class="image fit"><img src="images/Engineering_project/part 2 completed.PNG" alt=""
                     /></a>
 
+            <!-- Step 3 -->
+        <article class="post featured">
+          <header class="major">
+            <h2>
+              <a>STEP 3<br /> </a>
+            </h2>
+            <p style="font-size: 24px; text-align: center;">
+              Now, what I wanted to do was to transform data. In order to do so I used databricks.
+            </p>
+            <a class="image fit"><img src="images/Engineering_project/databricks.PNG" alt=""
+              /></a>
+              <p style="font-size: 24px; text-align: center;">
+                I started by creating cluster, which is simply a computational resource needed for data transformations.
+                I chose the cheapest available option, since I didn't have lots of data to process. <br><br>
+                Having my cluster created, I could finally write some code in the notebooks. I started with credential passthrough,
+                which I have taken from Microsoft documentation and filled with my custom information.
+              </p>
+              <a class="image fit"><img src="images/Engineering_project/credential passhrough.PNG" alt=""
+                /></a>
+                <p style="font-size: 24px; text-align: center;">
+                  While writing the code I encountered an error "This request is not authorized to perform this operation using this permission."
+                  And the solution turned out to be to assign the Storage Blob Data Contributor role to this service. It was
+                  quite surprising to me, taking into account that I'm a owner... But I guess that's just how it is...
+                </p>
+                <a class="image fit"><img src="images/Engineering_project/error_notebook.PNG" alt=""
+                  /></a>
+                  <p style="font-size: 24px; text-align: center;">
+                    Now I felt free to run all sorts of operations on my data. I started by modifying a date column and loading it
+                    into silver container:
+                  </p>  
+                  <a class="image fit"><img src="images/Engineering_project/transformation_dfate.PNG" alt=""
+                    /></a>
+                    <a class="image fit"><img src="images/Engineering_project/Transformation1.PNG" alt=""
+                      /></a> 
+                  <a class="image fit"><img src="images/Engineering_project/Transformation2.PNG" alt=""
+                    /></a>
+                  <p style="font-size: 24px; text-align: center;">
+                      Result was following:
+                  </p>
+                  <a class="image fit"><img src="images/Engineering_project/result_silver.PNG" alt=""
+                    /></a>
+                  <a class="image fit"><img src="images/Engineering_project/result_silver2.PNG" alt=""
+                    /></a>          
+            <!-- Step 4 -->
+        <article class="post featured">
+          <header class="major">
+            <h2>
+              <a>STEP 4<br /> </a>
+            </h2>
+            <p style="font-size: 24px; text-align: center;">
+              Next, I wanted to correct the column names and load the data into a gold container
+            </p>
+            <a class="image fit"><img src="images/Engineering_project/gold_transformation1.PNG" alt=""
+              /></a>
+            <a class="image fit"><img src="images/Engineering_project/gold_transformation2.PNG" alt=""
+              /></a>
+            <a class="image fit"><img src="images/Engineering_project/gold_transformation3.PNG" alt=""
+              /></a>
+            <p style="font-size: 24px; text-align: center;">
+                I also added my notebooks to the pipeline. And by doing so I completed the data transformation part of this project!
+            </p>
+            <a class="image fit"><img src="images/Engineering_project/pipeline.PNG" alt=""
+              /></a>       
+
             <!-- Loading Screen -->
             <article class="post featured">
               <header class="major">
