@@ -1,291 +1,498 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <title>Portfolio Website of Szymon Poparda</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-      <!-- Header -->
-      <header id="header">
-        <a class="logo">Data Engineering in Azure</a>
-      </header>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-      <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active">
-            <!-- Pierwsza strona -->
-            <li><a href="index.html">About Me</a></li>
-            <!-- druga strona -->
-            <li><a href="projects.html">My Projects</a></li>
-          </li>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Massively</a>
+					</header>
 
-          <!-- IKONY -->
-        </ul>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=100012907170191"
-              target="_blank"
-              class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/szymon-poparda-02b96a248/"
-              target="_blank"
-              class="icon brands alt fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/SimonPoparda"
-              target="_blank"
-              class="icon brands alt fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">This is Massively</a></li>
+							<li><a href="generic.html">Generic Page</a></li>
+							<li class="active"><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-        <!-- Main -->
-      <div id="main">
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a>Data Engineering in Azure<br /> </a>
-            </h2>
-            <p style="font-size: 24px;">
-              This project covers entire Data Engineering process from Ingestion of data to reporting.
-              I focus on cloud-based tools, such as Azure Data Factory, Azure Data Lake, Databricks, PowerBI and so on.  
-            </p>
-          </header>
-          <a class="image fit"><img src="images/azureoverwiew.PNG" alt=""
-            /></a>
-    
-        </article>
-        
-        <!-- Data used -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a>Data used in this project<br /> </a>
-            </h2>
-            <p style="font-size: 24px;">
-              The data that I will be working with is AdventureWorksLT2017, which provides me lots of possibilities
-            </p>
-          </header>
-          <a class="image fit"><img src="images/Engineering_project/Database.PNG" alt=""
-          /></a>
-          <p style="font-size: 24px; text-align: center;">
-            I hosted this database on my own device, so in order to connect it with Azure I needed self-hosted
-            integration runtime...
-          </p>
-           <!-- Step 1 -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a>STEP 1<br /> </a>
-            </h2>
-            <p style="font-size: 24px; text-align: center;">
-              The first task was to connect data with Azure. I host this database on my own device, 
-              so in order to connect I needed self-hosted integration runtime...
-            </p>
-            <a class="image fit"><img src="images/Engineering_project/IR.PNG" alt=""
-              /></a>
-              <p style="font-size: 24px; text-align: center;">
-                Now when connection is established I can start copying tables using ADF     
-                (Azure Data Factory) pipelines...
-              </p>
-              <!-- Step 2 -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a>STEP 2<br /> </a>
-            </h2>
-            <p style="font-size: 24px; text-align: center;">
-              I started by getting the names of the tables that I wanted to copy:
-            </p>
-            <a class="image fit"><img src="images/Engineering_project/tablenames.PNG" alt=""
-              /></a>
-              <p style="font-size: 24px; text-align: center;">
-                At the beggining of the pipeline I added "Lookup" method with custom query mentioned above
-              </p>
-              <a class="image fit"><img src="images/Engineering_project/lookup.PNG" alt=""
-                /></a>
-                <p style="font-size: 24px; text-align: center;">
-                  I continued by adding "ForEach" method:
-                </p>
-                <a class="image fit"><img src="images/Engineering_project/pipeline1.PNG" alt=""
-                  /></a>
-                  <p style="font-size: 24px; text-align: center;">
-                    And the result was following:
-                  </p>  
-                  <a class="image fit"><img src="images/Engineering_project/copiedtables.PNG" alt=""
-                    /></a>
-                  <a class="image fit"><img src="images/Engineering_project/result_adrres.PNG" alt=""
-                    /></a>
-                  <p style="font-size: 24px; text-align: center;">
-                      Data Ingestion part of this project was completed!
-                  </p>
-                  <a class="image fit"><img src="images/Engineering_project/part 2 completed.PNG" alt=""
-                    /></a>
+				<!-- Main -->
+					<div id="main">
 
-            <!-- Step 3 -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a>STEP 3<br /> </a>
-            </h2>
-            <p style="font-size: 24px; text-align: center;">
-              Now, what I wanted to do was to transform data. In order to do so I used databricks.
-            </p>
-            <a class="image fit"><img src="images/Engineering_project/databricks.PNG" alt=""
-              /></a>
-              <p style="font-size: 24px; text-align: center;">
-                I started by creating cluster, which is simply a computational resource needed for data transformations.
-                I chose the cheapest available option, since I didn't have lots of data to process. <br><br>
-                Having my cluster created, I could finally write some code in the notebooks. I started with credential passthrough,
-                which I have taken from Microsoft documentation and filled with my custom information.
-              </p>
-              <a class="image fit"><img src="images/Engineering_project/credential passhrough.PNG" alt=""
-                /></a>
-                <p style="font-size: 24px; text-align: center;">
-                  While writing the code I encountered an error "This request is not authorized to perform this operation using this permission."
-                  And the solution turned out to be to assign the Storage Blob Data Contributor role to this service. It was
-                  quite surprising to me, taking into account that I'm a owner... But I guess that's just how it is...
-                </p>
-                <a class="image fit"><img src="images/Engineering_project/error_notebook.PNG" alt=""
-                  /></a>
-                  <p style="font-size: 24px; text-align: center;">
-                    Now I felt free to run all sorts of operations on my data. I started by modifying a date column and loading it
-                    into silver container:
-                  </p>  
-                  <a class="image fit"><img src="images/Engineering_project/transformation_dfate.PNG" alt=""
-                    /></a>
-                    <a class="image fit"><img src="images/Engineering_project/Transformation1.PNG" alt=""
-                      /></a> 
-                  <a class="image fit"><img src="images/Engineering_project/Transformation2.PNG" alt=""
-                    /></a>
-                  <p style="font-size: 24px; text-align: center;">
-                      Result was following:
-                  </p>
-                  <a class="image fit"><img src="images/Engineering_project/result_silver.PNG" alt=""
-                    /></a>
-                  <a class="image fit"><img src="images/Engineering_project/result_silver2.PNG" alt=""
-                    /></a>          
-            <!-- Step 4 -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              <a>STEP 4<br /> </a>
-            </h2>
-            <p style="font-size: 24px; text-align: center;">
-              Next, I wanted to correct the column names and load the data into a gold container
-            </p>
-            <a class="image fit"><img src="images/Engineering_project/gold_transformation1.PNG" alt=""
-              /></a>
-            <a class="image fit"><img src="images/Engineering_project/gold_transformation2.PNG" alt=""
-              /></a>
-            <a class="image fit"><img src="images/Engineering_project/gold_transformation3.PNG" alt=""
-              /></a>
-            <p style="font-size: 24px; text-align: center;">
-                I also added my notebooks to the pipeline. And by doing so I completed the data transformation part of this project!
-            </p>
-            <a class="image fit"><img src="images/Engineering_project/pipeline.PNG" alt=""
-              /></a>       
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Elements<br />
+									Reference</h1>
+								</header>
 
-            <!-- Loading Screen -->
-            <article class="post featured">
-              <header class="major">
-                <h2>
-                  <a><br>Updates coming soon...<br /> </a>
-                </h2>
-            <p style="font-size: 24px; text-align: center;">
-              I'm currently working on this project - stay tuned...
-            </p>
-          </header>
-          <a class="image fit"><img src="images/loading.jpg" alt=""
-          /></a>
+								<!-- Text stuff -->
+									<h2>Text</h2>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
+									Finally, this is a <a href="#">link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<header>
+										<h2>Heading with a Subtitle</h2>
+										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+									</header>
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									<header>
+										<h3>Heading with a Subtitle</h3>
+										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+									</header>
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+									<header>
+										<h4>Heading with a Subtitle</h4>
+										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+									</header>
+									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 
-      <!-- Contact -->
-      <footer id="footer">
-        <section class="split contact">
-          <section class="alt">
-            <h3>Location</h3>
-            <p>Wrocław (precisely Jelcz-Laskowice)</p>
-          </section>
-          <section>
-            <h3>Phone</h3>
-            <p>517 910 409</p>
-          </section>
-          <section>
-            <h3>Email</h3>
-            <p>szymonpoparda@wp.pl</p>
-          </section>
-          <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100012907170191"
-                  target="_blank"
-                  class="icon brands alt fa-facebook-f"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-          
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/szymon-poparda-02b96a248/"
-                  target="_blank"
-                  class="icon brands alt fa-linkedin"
-                  ><span class="label">LinkedIn</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/SimonPoparda"
-                  target="_blank"
-                  class="icon brands alt fa-github"
-                  ><span class="label">GitHub</span></a
-                >
-              </li>
-            </ul>
-          </section>
-        </section>
-      </footer>
+									<hr />
 
-      <!-- Copyright -->
-      <div id="copyright">
-        <ul>
-          <li>&copy; Untitled</li>
-          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </div>
+								<!-- Lists -->
+									<h2>Lists</h2>
+									<div class="row">
+										<div class="col-6 col-12-small">
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+											<h3>Unordered</h3>
+											<ul>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis lorem eleifend.</li>
+												<li>Felis feugiat dolore viverra.</li>
+												<li>Dolor pulvinar etiam.</li>
+											</ul>
+
+											<h3>Alternate</h3>
+											<ul class="alt">
+												<li>Dolor pulvinar etiam etiam.</li>
+												<li>Sagittis adipiscing eleifend.</li>
+												<li>Felis enim dolore viverra.</li>
+												<li>Dolor pulvinar etiam etiam.</li>
+											</ul>
+
+										</div>
+										<div class="col-6 col-12-small">
+
+											<h3>Ordered</h3>
+											<ol>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis at viverra.</li>
+												<li>Felis enim feugiat magna.</li>
+												<li>Etiam vel felis nullam.</li>
+												<li>Felis enim et tempus.</li>
+											</ol>
+
+											<h3>Icons</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											</ul>
+											<ul class="icons alt">
+												<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+											</ul>
+
+										</div>
+									</div>
+									<h3>Definition</h3>
+									<dl>
+										<dt>Item 1</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+										<dt>Item 2</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+										<dt>Item 3</dt>
+										<dd>
+											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										</dd>
+									</dl>
+
+									<h3>Actions</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions small">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary fit">Default</a></li>
+												<li><a href="#" class="button fit">Default</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="#" class="button primary small fit">Small</a></li>
+												<li><a href="#" class="button small fit">Small</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<hr />
+
+								<!-- Blockquote -->
+									<h2>Blockquote</h2>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+
+									<hr />
+
+								<!-- Table -->
+									<h2>Table</h2>
+
+									<h3>Default</h3>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item 1</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 2</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 3</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 4</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 5</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h3>Alternate</h3>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item 1</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 2</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 3</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item 4</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item 5</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<hr />
+
+								<!-- Buttons -->
+									<h2>Buttons</h2>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions fit">
+										<li><a href="#" class="button primary fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+									</ul>
+									<ul class="actions fit small">
+										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Primary</span></li>
+										<li><span class="button disabled">Default</span></li>
+									</ul>
+
+									<hr />
+
+								<!-- Form -->
+									<h2>Form</h2>
+
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<select name="demo-category" id="demo-category">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<!-- Break -->
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">Normal</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<!-- Break -->
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">I am a human</label>
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+
+									<hr />
+
+								<!-- Image -->
+									<h2>Image</h2>
+
+									<h3>Fit</h3>
+									<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<!-- Break -->
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<!-- Break -->
+											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										</div>
+									</div>
+
+									<h3>Left &amp; Right</h3>
+									<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+									<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+
+									<hr />
+
+								<!-- Box -->
+									<h2>Box</h2>
+									<div class="box">
+										<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor.</p>
+									</div>
+
+									<hr />
+
+								<!-- Preformatted Code -->
+									<h2>Preformatted</h2>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';
+</code></pre>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
